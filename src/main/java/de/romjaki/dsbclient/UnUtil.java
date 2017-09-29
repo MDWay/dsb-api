@@ -20,8 +20,8 @@ public class UnUtil {
         UnUtil.singleton(UnUtil.class);
     }
 
-    public static Calendar calendarByDate(Date date, Locale germany) {
-        Calendar calendar = Calendar.getInstance(Locale.GERMANY);
+    public static Calendar calendarByDate(Date date, Locale locale) {
+        Calendar calendar = Calendar.getInstance(locale);
         calendar.setTime(date);
         return calendar;
     }
